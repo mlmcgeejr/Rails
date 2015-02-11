@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-  root to: 'pages#home'
+  root to: 'songs#index'   #  sawitched from pages#home
   
   
   get 'pages/home'
