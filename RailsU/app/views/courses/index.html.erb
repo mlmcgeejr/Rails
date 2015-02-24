@@ -17,10 +17,10 @@
         <td><%= course.number %></td>
         <td><%= course.title %></td>
         <td><%= course.credits %></td>
-        <td><%= course.department_id %></td>
-        <td><%= link_to 'Show', course %></td>
-        <td><%= link_to 'Edit', edit_course_path(course) %></td>
-        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= course.department.name %></td>
+        <td><%= link_to 'Show', course,:class => "btn-primary btn-sm" %></td>
+        <td><%= link_to 'Edit', edit_course_path(course),:class => "btn-primary btn-sm" %></td>
+        <td><%= link_to 'Destroy', course,:class => "btn-warning btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
